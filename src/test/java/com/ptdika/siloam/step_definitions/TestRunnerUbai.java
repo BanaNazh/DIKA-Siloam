@@ -4,11 +4,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(tags="a",
-				features={"src/test/resources/features/1.Login.feature",
-						"src/test/resources/features/2.Dashboard.feature",
-						"src/test/resources/features/3.Buzz.feature"},
+				features="src/test/resources/features/1.Login.feature",
 				glue = "com.juaracoding.pageobject.step_definitions",
 				plugin = {"pretty", "html:target/cucumber-reports.html"})
-public class TestRunner extends AbstractTestNGCucumberTests{
+
+public class TestRunnerUbai extends AbstractTestNGCucumberTests{
 
 }

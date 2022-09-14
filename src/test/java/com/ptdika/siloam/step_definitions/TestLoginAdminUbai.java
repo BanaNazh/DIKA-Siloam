@@ -1,5 +1,5 @@
 package com.ptdika.siloam.step_definitions;
 
-public class TestLoginSales {
+public class TestLoginAdminUbai {
 
 }

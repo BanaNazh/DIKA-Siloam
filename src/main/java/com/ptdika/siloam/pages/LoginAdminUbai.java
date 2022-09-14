@@ -1,5 +1,7 @@
 package com.ptdika.siloam.pages;
 
-public class LoginSales {
+public class LoginAdminUbai {
 
+	
+	
 }
