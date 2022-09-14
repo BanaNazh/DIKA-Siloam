@@ -3,9 +3,8 @@ package com.ptdika.siloam.utils;
 public enum TestScenarios {
 	
 	T1("User invalid login"),
-	T2("User valid login"),
-	T3("Dashboard User Function"),
-	T4("Buzz Function");
+	T2("User valid login");
+	
 	
 	private String testName;
 	
