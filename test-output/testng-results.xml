@@ -1,43 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T01:13:57 WIB" name="Default suite" finished-at="2022-09-15T01:14:16 WIB" duration-ms="18297">
+  <suite started-at="2022-09-15T16:44:12 WIB" name="Default suite" finished-at="2022-09-15T16:45:13 WIB" duration-ms="60822">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@4229bb3f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@48f278eb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-15T01:13:57 WIB" name="Default test" finished-at="2022-09-15T01:14:16 WIB" duration-ms="18297">
+    <test started-at="2022-09-15T16:44:12 WIB" name="Default test" finished-at="2022-09-15T16:45:13 WIB" duration-ms="60822">
       <class name="com.ptdika.siloam.step_definitions.TestRunnerUbai">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@4229bb3f]" started-at="2022-09-15T01:13:58 WIB" name="setUpClass" finished-at="2022-09-15T01:13:59 WIB" duration-ms="1684" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@48f278eb]" started-at="2022-09-15T16:44:12 WIB" name="setUpClass" finished-at="2022-09-15T16:44:15 WIB" duration-ms="3000" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@61ab89b0]]>
+                <![CDATA[org.testng.TestRunner@2f382a5e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@4229bb3f]" started-at="2022-09-15T01:13:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T01:14:13 WIB" duration-ms="13741" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@48f278eb]" started-at="2022-09-15T16:44:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T16:44:36 WIB" duration-ms="20471" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User valid login Sales"]]>
+                <![CDATA["User valid login Admin"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login User Sales"]]>
+                <![CDATA["Login User Admin"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@4229bb3f]" started-at="2022-09-15T01:14:13 WIB" name="tearDownClass" finished-at="2022-09-15T01:14:16 WIB" duration-ms="2775" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@48f278eb]" started-at="2022-09-15T16:44:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T16:44:51 WIB" duration-ms="15539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Dashboard User Function"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Admin"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@48f278eb]" started-at="2022-09-15T16:44:51 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T16:44:53 WIB" duration-ms="1160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View on Foto PDF Agreement"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Admin"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunnerUbai@48f278eb]" started-at="2022-09-15T16:44:53 WIB" name="tearDownClass" finished-at="2022-09-15T16:45:13 WIB" duration-ms="20453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

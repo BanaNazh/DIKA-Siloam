@@ -28,9 +28,6 @@ public class LoginAdminUbai {
 	public void login(String username, String password) {
 		this.username.sendKeys(username);// step
 		this.password.sendKeys(password);
-	}
-	
-	public void clickBtnLogin() {
 		btnLogin.click();
 	}
 }

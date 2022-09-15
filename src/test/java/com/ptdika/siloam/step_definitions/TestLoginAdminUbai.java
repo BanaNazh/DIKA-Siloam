@@ -27,8 +27,7 @@ public class TestLoginAdminUbai {
 	@When("User Admin go to Web Dika Siloam")
 	public void user_admin_go_to_Web_Dika_Siloam() {
 		driver.get(Constants.URL);
-		extentTest.log(LogStatus.PASS, "User Admin go to Web Dika Siloam");
-		
+		extentTest.log(LogStatus.PASS, "User Admin go to Web Dika Siloam");	
 	}
 
 	@And("User Admin enter valid username and password")
@@ -42,15 +41,6 @@ public class TestLoginAdminUbai {
 	@Then("User Admin click button login valid")
 	public void user_admin_click_button_login_valid() {
 		extentTest.log(LogStatus.PASS, "User Admin click button login valid");
-
 	}
+}
 
-	static void delay(int detik) {
-		try {
-			Thread.sleep(1000 * detik);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-}
-}
