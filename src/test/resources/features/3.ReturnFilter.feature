@@ -70,13 +70,24 @@ Scenario: Complete Status Ret006
 		And Click Button Filter Ret006
 		Then User return Page for status Complete Ret006
 		
-	Scenario: User return Page for status Pending		
-		And User Click Start Date
-		And Select a day in Start Date
-		And Select a day in End Date
-		And Click Status
-		And Select status as Pending
-		And Click Button Filter
-		Then User return Page for status Pending	
-		And User select filter with Pending status
+	Scenario: Pending Status Ret007		
+		And Click on date picker Start Date Ret007
+		And Select a day on Start Date Ret007
+		And Click on date picker End Date Ret007
+		And Select a day on End Date Ret007
+		And Click Status Dropdown Ret007
+		And Select Status Pending Ret007
+		And Click Button Filter Ret007
+		Then User return Page for status Pending Ret007
 		
+	Scenario: Reset Button Ret008
+		And Click on date picker Start Date Ret008
+		And Select a day on Start Date Ret008
+		And Click on date picker End Date Ret008
+		And Select a day on End Date Ret008
+		And Click Status Dropdown Ret008
+		And Select Status Pending Ret008
+		And Click Button Reset Ret008
+		Then Validate value on Start Date Ret008
+		Then Validate value on End Date Ret008
+		Then Validate value on Status Dropdown Ret008

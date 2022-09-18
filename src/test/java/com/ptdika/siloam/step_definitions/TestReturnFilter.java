@@ -1,11 +1,12 @@
 package com.ptdika.siloam.step_definitions;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-import com.ptdika.siloam.pages.ModulReturn;
+import com.ptdika.siloam.pages.ReturnFilter;
 import com.ptdika.siloam.utils.Constants;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -14,12 +15,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestModulReturn {
+public class TestReturnFilter {
 	public static WebDriver driver;
 	private static ExtentTest extentTest;
-	private ModulReturn modulReturn = new ModulReturn();
+	private ReturnFilter modulReturn = new ReturnFilter();
 
-	public TestModulReturn() {
+	public TestReturnFilter() {
 		driver = Hooks.driver;
 		extentTest = Hooks.extentTest;
 	}
@@ -344,6 +345,7 @@ public class TestModulReturn {
 	// Scenario: Complete Status Ret006
 	@And("Click on date picker Start Date Ret006")
 	public void Click_on_date_picker_Start_Date_Ret006() {
+		driver.navigate().refresh();
 		delay(2);
 		modulReturn.clickOnDatePickerStartDateRet006();
 		extentTest.log(LogStatus.PASS, "Click on date picker Start Date Ret006");
@@ -351,55 +353,178 @@ public class TestModulReturn {
 
 	@And("Select a day on Start Date Ret006")
 	public void Select_a_day_on_Start_Date_Ret006() {
-		delay(2);
 		modulReturn.selectADayOnStartDateRet006();
 		extentTest.log(LogStatus.PASS, "Select a day on Start Date Ret006");
 	}
-	
+
 	@And("Click on date picker End Date Ret006")
 	public void Click_on_date_picker_End_Date_Ret006() {
-		delay(2);
 		modulReturn.clickOnDatePickerEndDateRet006();
 		extentTest.log(LogStatus.PASS, "Click on date picker End Date Ret006");
 	}
-	
+
 	@And("Select a day on End Date Ret006")
 	public void Select_a_day_on_End_Date_Ret006() {
-		delay(2);
 		modulReturn.selectADayOnEndDateRet006();
 		extentTest.log(LogStatus.PASS, "Select a day on End Date Ret006");
 	}
-	
+
 	@And("Click Status Dropdown Ret006")
 	public void Click_Status_Dropdown_Ret006() {
-		delay(2);
 		modulReturn.clickStatusDropdownRet006();
 		extentTest.log(LogStatus.PASS, "Click Status Dropdown Ret006");
 	}
-	
+
 	@And("Select Status Complete Ret006")
 	public void Select_Status_Complete_Ret006() {
-		delay(2);
 		modulReturn.selectStatusCompleteRet006();
 		extentTest.log(LogStatus.PASS, "Select Status Complete Ret006");
 	}
-	
+
 	@And("Click Button Filter Ret006")
 	public void Click_Button_Filter_Ret006() {
-		delay(2);
 		modulReturn.clickButtonFilterRet006();
 		extentTest.log(LogStatus.PASS, "Click Button Filter Ret006");
 	}
-	
+
 	@Then("User return Page for status Complete Ret006")
 	public void User_return_Page_for_status_Complete_Ret006() {
 		delay(2);
 		System.out.println("Validation text is : " + modulReturn.userReturnPageForStatusCompleteRet006());
-		String txtRet005 = modulReturn.userReturnPageForStatusCompleteRet006();
-		assertTrue(txtRet005.contains("Sudah TTD"));
-		extentTest.log(LogStatus.PASS, "User_return_Page_for_status_Complete_Ret006");
+		String txtRet006 = modulReturn.userReturnPageForStatusCompleteRet006();
+		assertTrue(txtRet006.contains("Sudah TTD"));
+		extentTest.log(LogStatus.PASS, "User return Page for status Complete Ret006");
+	}
+
+	// Scenario: Pending Status Ret007
+	@And("Click on date picker Start Date Ret007")
+	public void Click_on_date_picker_Start_Date_Ret007() {
+		driver.navigate().refresh();
+		delay(2);
+		modulReturn.clickOnDatePickerStartDateRet007();
+		extentTest.log(LogStatus.PASS, "Click on date picker Start Date Ret007");
+	}
+
+	@And("Select a day on Start Date Ret007")
+	public void Select_a_day_on_Start_Date_Ret007() {
+		modulReturn.selectADayOnStartDateRet007();
+		extentTest.log(LogStatus.PASS, "Select a day on Start Date Ret007");
+	}
+
+	@And("Click on date picker End Date Ret007")
+	public void Click_on_date_picker_End_Date_Ret007() {
+		modulReturn.clickOnDatePickerEndDateRet007();
+		extentTest.log(LogStatus.PASS, "Click on date picker End Date Ret007");
+	}
+
+	@And("Select a day on End Date Ret007")
+	public void Select_a_day_on_End_Date_Ret007() {
+		modulReturn.selectADayOnEndDateRet007();
+		extentTest.log(LogStatus.PASS, "Select a day on End Date Ret007");
+	}
+
+	@And("Click Status Dropdown Ret007")
+	public void Click_Status_Dropdown_Ret007() {
+		modulReturn.clickStatusDropdownRet007();
+		extentTest.log(LogStatus.PASS, "Click Status Dropdown Ret007");
+	}
+
+	@And("Select Status Pending Ret007")
+	public void Select_Status_Pending_Ret007() {
+		modulReturn.selectStatusPendingRet007();
+		extentTest.log(LogStatus.PASS, "Select Status Pending Ret007");
+	}
+
+	@And("Click Button Filter Ret007")
+	public void Click_Button_Filter_Ret007() {
+		modulReturn.clickButtonFilterRet007();
+		extentTest.log(LogStatus.PASS, "Click Button Filter Ret007");
+	}
+
+	@Then("User return Page for status Pending Ret007")
+	public void User_return_Page_for_status_Pending_Ret007() {
+		System.out.println("Button visible: " +modulReturn.userReturnPageForStatusPendingRet007());
+		boolean buttonVisible = modulReturn.userReturnPageForStatusPendingRet007();
+		assertEquals(buttonVisible,true);
+		extentTest.log(LogStatus.PASS, "User return Page for status Pending Ret007");
+	
+	}	
+	
+	// Scenario: Reset Button Ret008
+	@And("Click on date picker Start Date Ret008")
+	public void Click_on_date_picker_Start_Date_Ret008() {
+		driver.navigate().refresh();
+		delay(2);
+		modulReturn.clickOnDatePickerStartDateRet008();
+		extentTest.log(LogStatus.PASS, "Click on date picker Start Date Ret008");
+	}
+
+	@And("Select a day on Start Date Ret008")
+	public void Select_a_day_on_Start_Date_Ret008() {
+		modulReturn.selectADayOnStartDateRet008();
+		extentTest.log(LogStatus.PASS, "Select a day on Start Date Ret008");
+	}
+
+	@And("Click on date picker End Date Ret008")
+	public void Click_on_date_picker_End_Date_Ret008() {
+		modulReturn.clickOnDatePickerEndDateRet008();
+		extentTest.log(LogStatus.PASS, "Click on date picker End Date Ret008");
+	}
+
+	@And("Select a day on End Date Ret008")
+	public void Select_a_day_on_End_Date_Ret008() {
+		modulReturn.selectADayOnEndDateRet008();
+		extentTest.log(LogStatus.PASS, "Select a day on End Date Ret008");
+	}
+
+	@And("Click Status Dropdown Ret008")
+	public void Click_Status_Dropdown_Ret008() {
+		modulReturn.clickStatusDropdownRet008();
+		extentTest.log(LogStatus.PASS, "Click Status Dropdown Ret008");
+	}
+
+	@And("Select Status Pending Ret008")
+	public void Select_Status_Pending_Ret008() {
+		modulReturn.selectStatusPendingRet008();
+		extentTest.log(LogStatus.PASS, "Select Status Pending Ret008");
+	}
+
+	@And("Click Button Reset Ret008")
+	public void Click_Button_Reset_Ret008() {
+		delay(2);
+		modulReturn.clickButtonResetRet008();
+		extentTest.log(LogStatus.PASS, "Click Button Reset Ret008");
+		delay(2);
+	}
+
+	@Then("Validate value on Start Date Ret008")
+	public void Validate_value_on_Start_Date_Ret008() {
+		modulReturn.validateValueOnStartDateRet008();
+		System.out.println("StartDate value is : " + modulReturn.validateValueOnStartDateRet008());
+		String txtStartDateRet008 = modulReturn.validateValueOnStartDateRet008();
+		assertEquals(txtStartDateRet008, null);
+		extentTest.log(LogStatus.PASS, "Validate value on Start Date Ret008");
+	
 	}
 	
+	@Then("Validate value on End Date Ret008")
+	public void Validate_value_on_End_Date_Ret008() {
+		modulReturn.validateValueOnEndDateRet008();
+		System.out.println("EndDate value is : " + modulReturn.validateValueOnEndDateRet008());
+		String txtRet008 = modulReturn.validateValueOnEndDateRet008();
+		assertEquals(txtRet008, null);
+		extentTest.log(LogStatus.PASS, "Validate value on End Date Ret008");
+		delay(2);
+	}
+	
+	@Then("Validate value on Status Dropdown Ret008")
+	public void Validate_value_on_Status_Dropdown_Ret008() {
+		modulReturn.validateValueOnStatusDropdownRet008();
+		System.out.println("Status Dropdown value is : " + modulReturn.validateValueOnStatusDropdownRet008());
+		String txtRet008 = modulReturn.validateValueOnStatusDropdownRet008();
+		assertEquals(txtRet008, null);
+		extentTest.log(LogStatus.PASS, "Validate value on Status Dropdown Ret008");
+	}	
 	
 	// Scenario: User select Data Display
 	@And("User select data display per page")

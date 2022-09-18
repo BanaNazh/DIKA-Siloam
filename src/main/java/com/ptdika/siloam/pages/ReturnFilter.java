@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ptdika.siloam.drivers.DriverSingleton;
 
-public class ModulReturn {
+public class ReturnFilter {
 	private WebDriver driver;
 
-	public ModulReturn() {
+	public ReturnFilter() {
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
@@ -52,7 +52,7 @@ public class ModulReturn {
 	@FindBy(xpath = "//td[normalize-space()='17']")
 	private WebElement dateEndSelect;
 
-	@FindBy(xpath = "//b[@role='presentation']")
+	@FindBy(css = "#select2-status-container")
 	private WebElement clickStatusDropdown;
 
 	@FindBy(xpath = "//input[@role='textbox']")
@@ -60,12 +60,18 @@ public class ModulReturn {
 
 	@FindBy(xpath = "//button[@id='btn-filter']")
 	private WebElement btnFilter;
+	
+	@FindBy (xpath = "//button[@id='btn-reset']")
+	private WebElement btnReset;
 
 	@FindBy(css = "#table > tbody > tr > td")
 	private WebElement txtNoData;
-	
-	@FindBy(xpath = "//*[@id=\"table\"]/tbody/tr[2]/td[7]/span")
+
+	@FindBy(xpath = "//*[@id=\"table\"]/tbody/tr/td[7]/span")
 	private WebElement sudahTTD;
+	
+	@FindBy(css = "#table > tbody > tr:nth-child(1) > td:nth-child(7) > center > a")
+	private WebElement eyeIcon;
 
 	@FindBy(xpath = "//select[@name='table_length']")
 	private WebElement dataDisplayDropdown;
@@ -264,53 +270,117 @@ public class ModulReturn {
 	public String userReceivedErrorMessageBlankStatus005() {
 		return clickStatusDropdown.getAttribute("ValidationMessage");
 	}
-	
-	//Scenario: Complete Status Ret006
+
+	// Scenario: Complete Status Ret006
 	public void clickOnDatePickerStartDateRet006() {
 		datePickerStart.click();
 	}
-	
+
 	public void selectADayOnStartDateRet006() {
 		dateStartSelect.click();
 	}
-	
+
 	public void clickOnDatePickerEndDateRet006() {
 		datePickerEnd.click();
 	}
-	
+
 	public void selectADayOnEndDateRet006() {
 		dateEndSelect.click();
 	}
-	
+
 	public void clickStatusDropdownRet006() {
 		clickStatusDropdown.click();
 	}
-	
+
 	public void selectStatusCompleteRet006() {
 		textboxStatus.sendKeys("Complete" + "\n");
 	}
-	
+
 	public void clickButtonFilterRet006() {
 		btnFilter.click();
 
 	}
-	
+
 	public String userReturnPageForStatusCompleteRet006() {
 		return sudahTTD.getText();
-		
-	}	
-	
 
-	public void returnPagePending() {
-		btnReturn.click();
+	}
+	
+//	Scenario: Pending Status Ret007	
+	public void clickOnDatePickerStartDateRet007() {
 		datePickerStart.click();
+	}
+	
+	public void selectADayOnStartDateRet007() {
 		dateStartSelect.click();
+	}
+	
+	public void clickOnDatePickerEndDateRet007() {
 		datePickerEnd.click();
+	}
+	
+	public void selectADayOnEndDateRet007() {
 		dateEndSelect.click();
+	}
+	
+	public void clickStatusDropdownRet007() {
 		clickStatusDropdown.click();
+	}
+	
+	public void selectStatusPendingRet007() {
 		textboxStatus.sendKeys("Pending" + "\n");
+	}
+	
+	public void clickButtonFilterRet007() {
 		btnFilter.click();
 
+	}
+	
+	public boolean userReturnPageForStatusPendingRet007() {
+		return eyeIcon.isDisplayed();
+
+	}
+	
+//	Scenario: Reset Button Ret008
+	public void clickOnDatePickerStartDateRet008() {
+		datePickerStart.click();
+	}
+	
+	public void selectADayOnStartDateRet008() {
+		dateStartSelect.click();
+	}
+	
+	public void clickOnDatePickerEndDateRet008() {
+		datePickerEnd.click();
+	}
+	
+	public void selectADayOnEndDateRet008() {
+		dateEndSelect.click();
+	}
+	
+	public void clickStatusDropdownRet008() {
+		clickStatusDropdown.click();
+	}
+	
+	public void selectStatusPendingRet008() {
+		textboxStatus.sendKeys("Pending" + "\n");
+	}
+	
+	public void clickButtonResetRet008() {
+		btnReset.click();
+
+	}
+	
+	public String validateValueOnStartDateRet008() {
+		return datePickerStart.getAttribute("value");
+	}
+	
+	public String validateValueOnEndDateRet008()	{
+		return datePickerEnd.getAttribute("value");
+	}
+	
+	public String validateValueOnStatusDropdownRet008()	{
+		return clickStatusDropdown.getAttribute("title");			
 	}
 
 	public void dataDisplay() {
