@@ -16,7 +16,6 @@ private WebDriver driver;
 	public ModulInputData() {
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
-	
 	}
 	
 	@FindBy(xpath = "//h1[@class='page-header']")
@@ -58,7 +57,7 @@ private WebDriver driver;
 	@FindBy(xpath = "//span[@id='select2-ktp_city-container']")
 	private WebElement btnKota;
 	
-	@FindBy(xpath = "//*[@id=\"select2-ktp_city-result-tqog-KOTA JAKARTA SELATAN\"]")
+	@FindBy(xpath = "//*[text()=\"KOTA JAKARTA SELATAN\"]")
 	private WebElement pilihKota;
 	
 	@FindBy(xpath = "//input[@role='textbox']")
@@ -72,12 +71,9 @@ private WebDriver driver;
 	
 	@FindBy(xpath = "//input[@id='origin_faskes']")
 	private WebElement txtFaskesAwalHuruf;
-
+	
 	@FindBy(xpath = "//span[@id='select2-destination_faskes-container']")
 	private WebElement btnFaskesTujuan;
-	
-	@FindBy(xpath = "//*[@id=\"select2-destination_faskes-result-cobp-2||Clinic Kepu Timur||Kota Jakarta Pusat\"]")
-	private WebElement pilihFaskesTujuan;
 	
 	@FindBy(xpath = "//input[@role='textbox']")
 	private WebElement txtFaskesTujuan;
@@ -182,10 +178,6 @@ private WebDriver driver;
 		
 	public void btnFaskesTujuan() {
 		btnFaskesTujuan.click();
-	}
-	
-	public void pilihFaskesTujuan() {
-		pilihFaskesTujuan.click();;
 	}
 	
 	public void txtFaskesTujuan(String nama) {

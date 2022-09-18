@@ -24,13 +24,8 @@ public class TestModulInputData {
 	public TestModulInputData() {
 		driver = Hooks.driver;
 		extentTest = Hooks.extentTest;
-		
-//		WebElement l = driver.findElement(By.name("KOTA JAKARTA SELATAN"));
-//	    //JavaScript Executor to click element
-//		JavascriptExecutor j = (JavascriptExecutor) driver;
-//	    j.executeScript("arguments[0].click();", l);
-	    
 	}
+	
 	@When("User on menu Dashboard")
 	public void User_on_menu_dashboard() {
 		assertEquals(modul.getTxtPageModul(), "Home");
@@ -156,56 +151,6 @@ public class TestModulInputData {
 		extentTest.log(LogStatus.PASS, "User input field Alamat huruf");
 	}
 	
-//	Form Pilih Faskes Tujuan
-	@When("User click button faskes Tujuan")
-	public void user_click_button_faskes_tujuan() {
-	modul.btnFaskesTujuan();
-	extentTest.log(LogStatus.PASS, "User click button faskes Tujuan");
-	}
-	
-	@And("User input field angka faskes Tujuan")
-	public void user_input_field_angka_faskes_tujuan() {
-		modul.txtFaskesTujuan("31231211");
-		extentTest.log(LogStatus.PASS, "User input field angka faskes Tujuan");
-	}
-	
-	@And("User input field simbol faskes Tujuan")
-	public void user_input_field_simbol_faskes_tujuan() {
-		modul.txtFaskesTujuan("!@#!@!!@#");
-		extentTest.log(LogStatus.PASS, "User input field simbol faskes Tujuan");
-	}   
-	
-	@And("User input field Jakarta Pusat")
-	public void user_input_field_jakarta_pusat() {
-		modul.txtFaskesTujuanHuruf("Jakarta Pusat");
-		extentTest.log(LogStatus.PASS, "User input field Jakarta Pusat");
-	}
-	
-	@And("User click Jakarta Pusat")
-	public void user_click_jakarta_pusat() {
-		modul.pilihFaskesTujuan();
-		extentTest.log(LogStatus.PASS, "User click Jakarta Pusat");
-	}
-	
-//	Form Faskes Awal
-	@When("User input field faskes Awal simbol")
-	public void user_input_field_faskes_awal_simbol() {
-	modul.txtFaskesAwal("!@#!@!@#!@#");
-	extentTest.log(LogStatus.PASS, "User input field faskes Awal simbol");
-	}
-	
-	@And("User input field faskes Awal angka")
-	public void user_input_field_faskes_awal_angka() {
-	modul.txtFaskesAwal("85645487");
-	extentTest.log(LogStatus.PASS, "User input field faskes Awal angka");
-	}
-	
-	@And("User input field faskes Awal huruf")
-	public void user_input_field_faskes_awal_huruf() {
-	modul.txtFaskesAwalHuruf("Clinic Kemang Sari");
-	extentTest.log(LogStatus.PASS, "User input field faskes Awal huruf");
-	}
-	
 //	Form Pilih Kota
 	@When("User click button kota KTP")
 	public void user_click_button_kota_ktp() {
@@ -237,9 +182,54 @@ public class TestModulInputData {
 		extentTest.log(LogStatus.PASS, "User click Jakarta Selatan");
 	}
 	
+//	Form Faskes Awal
+	@When("User input field faskes Awal simbol")
+	public void user_input_field_faskes_awal_simbol() {
+	modul.txtFaskesAwal("!@#!@!@#!@#");
+	extentTest.log(LogStatus.PASS, "User input field faskes Awal simbol");
+	}
+	
+	@And("User input field faskes Awal angka")
+	public void user_input_field_faskes_awal_angka() {
+	modul.txtFaskesAwal("85645487");
+	extentTest.log(LogStatus.PASS, "User input field faskes Awal angka");
+	}
+	
+	@And("User input field faskes Awal huruf")
+	public void user_input_field_faskes_awal_huruf() {
+	modul.txtFaskesAwalHuruf("Clinic Kemang Sari");
+	extentTest.log(LogStatus.PASS, "User input field faskes Awal huruf");
+	}
+	
+//	Form Pilih Faskes Tujuan
+	@When("User click button faskes Tujuan")
+	public void user_click_button_faskes_tujuan() {
+	modul.btnFaskesTujuan();
+	extentTest.log(LogStatus.PASS, "User click button faskes Tujuan");
+	}
+	
+	@And("User input field angka faskes Tujuan")
+	public void user_input_field_angka_faskes_tujuan() {
+		modul.txtFaskesTujuan("31231211");
+		extentTest.log(LogStatus.PASS, "User input field angka faskes Tujuan");
+	}
+	
+	@And("User input field simbol faskes Tujuan")
+	public void user_input_field_simbol_faskes_tujuan() {
+		modul.txtFaskesTujuan("!@#!@!!@#");
+		extentTest.log(LogStatus.PASS, "User input field simbol faskes Tujuan");
+	}   
+	
+	@And("User input field Jakarta Pusat")
+	public void user_input_field_jakarta_pusat() {
+		modul.txtFaskesTujuanHuruf("Jakarta" + "\n");
+		extentTest.log(LogStatus.PASS, "User input field Jakarta Pusat");
+	}
+	
+	
 	@And("User input field Alasan")
 	public void user_input_field_alasan() {
-		modul.pilihKota();
+		modul.txtAlasan("Pindah Alamat Rumah");
 		extentTest.log(LogStatus.PASS, "User input field Alasan");
 	}
 	

@@ -57,10 +57,9 @@ Scenario: User on feature input data Field Faskes Awal
 @tag7
 Scenario: User on feature input data Field Faskes Tujuan
 			When User click button faskes Tujuan 
-			And User input field angka
-			And User input field simbol
+			And User input field angka faskes Tujuan
+			And User input field simbol faskes Tujuan
 			And User input field Jakarta Pusat
-			And User clik Jakarta Pusat
 			Then User click button Simpan
 			And User input field Alasan
 			Then User click button Simpan
