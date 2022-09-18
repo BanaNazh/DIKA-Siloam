@@ -24,29 +24,19 @@ public class TestLoginSalesUbai {
 	public void user_go_to_Web_Dika_Siloam() {
 		driver.get(Constants.URL);
 		extentTest.log(LogStatus.PASS, "User go to Web Dika Siloam");
-		
 	}
 	
 	@And("User sales enter valid username and password")
 	public void user_sales_enter_valid_username_and_password() {
 		driver.navigate().refresh();
-		delay(1);
+		Hooks.delay(1);
 		loginPage.login("D6200927", "1997-10-23");
 		extentTest.log(LogStatus.PASS, "User sales enter valid username and password");
 	}
 
 	@Then("User click button login valid")
-	public void user_sales_click_button_login_valid() {
+	public void user_click_button_login_valid() {
 		extentTest.log(LogStatus.PASS, "User click button login valid");
-	}
-	
-	static void delay(int detik) {
-		try {
-			Thread.sleep(1000 * detik);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 }
 	
