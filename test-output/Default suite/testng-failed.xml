@@ -6,7 +6,7 @@
       <class name="com.ptdika.siloam.step_definitions.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="9 10 11 13 14 17 18 19 20 21 22 23 24 25 26 27 28 29"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.ptdika.siloam.step_definitions.TestRunner -->

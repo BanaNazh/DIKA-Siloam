@@ -11,7 +11,16 @@ public enum TestScenarios {
 	T7("Blank Status Ret005"),
 	T8("Complete Status Ret006"),
 	T9("Pending Status Ret007"),
-	T10("Reset Button Ret008");
+	T10("Reset Button Ret008"),
+	T11("User valid login Sales"),
+	T12("User on feature input data Field Nama"),
+	T13("User on feature input data Field BPJS"),
+	T14("User on feature input data Field KTP"),
+	T15("User on feature input data Field Alamat"),
+	T16("User on feature input data Field Search Kota"),
+	T17("User on feature input data Field Faskes Awal"),
+	T18("User on feature input data Field Faskes Tujuan");
+	
 	
 	private String testName;
 	

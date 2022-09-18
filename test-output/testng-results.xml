@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="30" passed="12" failed="18" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T17:48:57 WIB" name="Default suite" finished-at="2022-09-15T17:49:28 WIB" duration-ms="30724">
+  <suite started-at="2022-09-19T02:10:22 WIB" name="Default suite" finished-at="2022-09-19T02:12:00 WIB" duration-ms="97315">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@384ad17b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-15T17:48:57 WIB" name="Default test" finished-at="2022-09-15T17:49:28 WIB" duration-ms="30724">
+    <test started-at="2022-09-19T02:10:22 WIB" name="Default test" finished-at="2022-09-19T02:12:00 WIB" duration-ms="97315">
       <class name="com.ptdika.siloam.step_definitions.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@384ad17b]" started-at="2022-09-15T17:48:57 WIB" name="setUpClass" finished-at="2022-09-15T17:48:58 WIB" duration-ms="999" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:22 WIB" name="setUpClass" finished-at="2022-09-19T02:10:23 WIB" duration-ms="709" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@151bf776]]>
+                <![CDATA[org.testng.TestRunner@7ca492d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@384ad17b]" started-at="2022-09-15T17:48:58 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T17:49:14 WIB" duration-ms="15623" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:23 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:10:27 WIB" duration-ms="3591" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@384ad17b]" started-at="2022-09-15T17:49:14 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T17:49:25 WIB" duration-ms="11680" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:27 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:10:29 WIB" duration-ms="2665" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,746 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@384ad17b]" started-at="2022-09-15T17:49:25 WIB" name="tearDownClass" finished-at="2022-09-15T17:49:28 WIB" duration-ms="2358" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:29 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:10:30 WIB" duration-ms="797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User on feature input data Field Nama"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Menu"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:30 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:10:37 WIB" duration-ms="6578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User on feature input data Field BPJS"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Menu"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:37 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:10:43 WIB" duration-ms="6506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User on feature input data Field KTP"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Menu"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:43 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:10:46 WIB" duration-ms="3313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User on feature input data Field Alamat"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Menu"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:47 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:10:50 WIB" duration-ms="3581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User on feature input data Field Search Kota"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Menu"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:50 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:10:56 WIB" duration-ms="6360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User on feature input data Field Faskes Awal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Menu"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:10:56 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:04 WIB" duration-ms="7086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User on feature input data Field Faskes Tujuan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Menu"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:04 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:15 WIB" duration-ms="11550" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User valid login module Input TTD Digital"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Input TTD Digital"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Username']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KSTQATESTER', ip: '192.168.1.118', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\nurba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e578c88cb3edab40c6334ba75f0304d4
+*** Element info: {Using=xpath, value=//input[@placeholder='Username']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Username']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KSTQATESTER', ip: '192.168.1.118', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\nurba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e578c88cb3edab40c6334ba75f0304d4
+*** Element info: {Using=xpath, value=//input[@placeholder='Username']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.sendKeys(Unknown Source)
+at com.ptdika.siloam.pages.InputTTDDigital.login(InputTTDDigital.java:47)
+at com.ptdika.siloam.step_definitions.TestInputTTDDigital.User_enter_valid_username_and_password_modul_Input_TTD_Digital(TestInputTTDDigital.java:36)
+at ✽.User enter valid username and password modul Input TTD Digital(file:///C:/Users/nurba/eclipse-workspace/com.ptdika.siloam/src/test/resources/features/03.InputTTDDigital.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:28 WIB" duration-ms="12639" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search compatible data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Input TTD Digital"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='fa fa-eye']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KSTQATESTER', ip: '192.168.1.118', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\nurba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e578c88cb3edab40c6334ba75f0304d4
+*** Element info: {Using=xpath, value=//span[@class='fa fa-eye']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='fa fa-eye']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KSTQATESTER', ip: '192.168.1.118', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\nurba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e578c88cb3edab40c6334ba75f0304d4
+*** Element info: {Using=xpath, value=//span[@class='fa fa-eye']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+at com.ptdika.siloam.pages.InputTTDDigital.userClickOnEyeButton(InputTTDDigital.java:61)
+at com.ptdika.siloam.step_definitions.TestInputTTDDigital.User_Click_On_Eye_Button(TestInputTTDDigital.java:66)
+at ✽.User Click On Eye Button(file:///C:/Users/nurba/eclipse-workspace/com.ptdika.siloam/src/test/resources/features/03.InputTTDDigital.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:28 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:39 WIB" duration-ms="11505" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User valid login module Return"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Username']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KSTQATESTER', ip: '192.168.1.118', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\nurba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e578c88cb3edab40c6334ba75f0304d4
+*** Element info: {Using=xpath, value=//input[@placeholder='Username']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Username']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KSTQATESTER', ip: '192.168.1.118', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\nurba\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e578c88cb3edab40c6334ba75f0304d4
+*** Element info: {Using=xpath, value=//input[@placeholder='Username']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.sendKeys(Unknown Source)
+at com.ptdika.siloam.pages.ReturnFilter.login(ReturnFilter.java:85)
+at com.ptdika.siloam.step_definitions.TestReturnFilter.User_enter_valid_username_and_password_modul_Return(TestReturnFilter.java:40)
+at ✽.User enter valid username and password modul Return(file:///C:/Users/nurba/eclipse-workspace/com.ptdika.siloam/src/test/resources/features/04.ReturnFilter.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:39 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:40 WIB" duration-ms="386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User navigate to return page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:40 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:40 WIB" duration-ms="639" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Blank Start Date Ret001"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "txtRet001" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "txtRet001" is null
+at com.ptdika.siloam.step_definitions.TestReturnFilter.User_received_error_message_Blank_Start_Date_Ret001(TestReturnFilter.java:119)
+at ✽.User received error message Blank Start Date Ret001(file:///C:/Users/nurba/eclipse-workspace/com.ptdika.siloam/src/test/resources/features/04.ReturnFilter.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:40 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:43 WIB" duration-ms="2716" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Blank End Date Ret002"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "txtRet002" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "txtRet002" is null
+at com.ptdika.siloam.step_definitions.TestReturnFilter.User_received_error_message_Blank_End_Date_Ret002(TestReturnFilter.java:174)
+at ✽.User received error message Blank End Date Ret002(file:///C:/Users/nurba/eclipse-workspace/com.ptdika.siloam/src/test/resources/features/04.ReturnFilter.feature:31)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:43 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:48 WIB" duration-ms="4637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Set Future day on Start Date Ret003"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:48 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:52 WIB" duration-ms="4691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Set Future day on End Date Ret004"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="4761" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Blank Status Ret005"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "txtRet005" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "txtRet005" is null
+at com.ptdika.siloam.step_definitions.TestReturnFilter.User_received_error_message_Blank_Status_Ret005(TestReturnFilter.java:339)
+at ✽.User received error message Blank Status Ret005(file:///C:/Users/nurba/eclipse-workspace/com.ptdika.siloam/src/test/resources/features/04.ReturnFilter.feature:61)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="22" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complete Status Ret006"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="27" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Pending Status Ret007"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="24" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Reset Button Ret008"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Return Filter"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="22" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Logout Sales"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logout Sales"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="23" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User invalid login Admin"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login User Admin"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="24" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User valid login Admin"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login User Admin"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="21" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Text Scrap"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login User Admin"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="25" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Dashboard User Function"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Admin"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="21" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View on Data Table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Admin"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="23" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View on Foto Faskes Awal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Admin"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="22" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View on Foto Faskes Tujuan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Admin"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T02:11:57 WIB" duration-ms="26" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View on Foto PDF Agreement"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dashboard Admin"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 18 out of bounds for length 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+at com.ptdika.siloam.step_definitions.Hooks.setUp(Hooks.java:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ptdika.siloam.step_definitions.TestRunner@3835c46]" started-at="2022-09-19T02:11:57 WIB" name="tearDownClass" finished-at="2022-09-19T02:12:00 WIB" duration-ms="2258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
