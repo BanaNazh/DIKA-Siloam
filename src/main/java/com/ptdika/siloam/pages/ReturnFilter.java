@@ -98,8 +98,8 @@ public class ReturnFilter {
 
 	}
 
-	// Filter Function Negative Case
-	// Scenario : Blank Start Date Ret001
+// Filter Function Negative Case
+// Scenario : Blank Start Date Ret001
 	public void clickOnDatePickerStartDateRet001() {
 		datePickerStart.click();
 	}
@@ -383,9 +383,4 @@ public class ReturnFilter {
 		return clickStatusDropdown.getAttribute("title");
 	}
 
-	public void dataDisplay() {
-		dataDisplayDropdown.click();
-		dataDisplay25.click();
-
 	}
-}

@@ -68,8 +68,8 @@ public class TestReturnFilter {
 		extentTest.log(LogStatus.PASS, "User landed on return page successfully");
 	}
 
-	// Negative Case
-	// Scenario: Blank Start Date Ret001
+// Negative Case
+// Scenario: Blank Start Date Ret001
 	@And("Click on date picker Start Date Ret001")
 	public void Click_on_date_picker_Start_Date_Ret001() {
 		modulReturn.clickOnDatePickerStartDateRet001();
