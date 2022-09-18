@@ -10,3 +10,8 @@
     When User Admin enter valid username and password
     And User click button login valid
     Then User enter valid credentials
+    
+ 	Scenario: Text Scrap
+ 		And User admin go to view report
+ 		And User click filter button
+ 		Then User find error message

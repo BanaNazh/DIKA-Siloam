@@ -1,5 +1,7 @@
 package com.ptdika.siloam.pages;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +26,15 @@ public class LoginAdmin {
 
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement btnLogin;
+	
+	@FindBy (xpath = "//span[normalize-space()='View & Export']")
+	private WebElement menuViewReport;
+	
+	@FindBy(xpath = "//input[@id='datepicker']")
+	private WebElement datePicker;
+	
+	@FindBy(xpath = "//button[normalize-space()='Filter']")
+	private WebElement btnFilter;
 
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']")
 	private WebElement msgError;
@@ -45,8 +56,22 @@ public class LoginAdmin {
 	public void clickBtnLogin() {
 		btnLogin.click();
 	}
+	
+	public void clickMenuViewReport() {
+		menuViewReport.click();
+	}
+	
+	public void clickBtnFilter() {
+		btnFilter.click();
+	}
+	
+	public void txtScrap() {
+		String msge = datePicker.getAttribute("validationMessage");
+		System.out.println(msge);
+		assertTrue(msge.contains("Please fill out this field."));
+	}
 
-	// Actual
+	// Actual;
 	public String msgInvalid() {
 		return msgError.getText();
 	}

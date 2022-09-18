@@ -21,10 +21,10 @@ public class TestLoginSales {
 		extentTest = Hooks.extentTest;
 	}
 
-	@When("User go to Web Dika Siloam")
-	public void user_go_to_Web_Dika_Siloam() {
+	@When("User go to Web Dika Siloam modul Return")
+	public void user_go_to_Web_Dika_Siloam_modul_Return() {
 		driver.get(Constants.URL);
-		extentTest.log(LogStatus.PASS, "User go to Web Dika Siloam");
+		extentTest.log(LogStatus.PASS, "User go to Web Dika Siloam modul Return");
 		
 	}
 

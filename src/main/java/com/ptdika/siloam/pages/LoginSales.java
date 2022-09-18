@@ -8,8 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import com.ptdika.siloam.drivers.DriverSingleton;
 
 public class LoginSales {
-
-
 	private WebDriver driver;
 
 	public LoginSales() {
@@ -18,7 +16,6 @@ public class LoginSales {
 	}
 
 	@FindBy(xpath = "//input[@placeholder='Username']")
-	//input[contains(@attr, 'value')]
 	private WebElement username;
 
 	@FindBy(xpath = "//input[@placeholder='Password']")
@@ -29,9 +26,6 @@ public class LoginSales {
 
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']")
 	private WebElement msgError;
-
-	@FindBy(xpath = "//h1[normalize=space()='Dashboard']")
-	private WebElement txtDashboard;
 	
 	@FindBy (xpath = "//span[@id='spanMessage']")
 	private WebElement txtEmpty;
@@ -51,10 +45,6 @@ public class LoginSales {
 	// Actual
 	public String msgInvalid() {
 		return msgError.getText();
-	}
-
-	public String getTxtDashboard() {
-		return txtDashboard.getText();
 	}
 	
 	public String getTxtEmpty() {

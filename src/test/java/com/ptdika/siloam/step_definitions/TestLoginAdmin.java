@@ -1,7 +1,10 @@
 package com.ptdika.siloam.step_definitions;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 
+import com.ptdika.siloam.pages.LoginAdmin;
 import com.ptdika.siloam.pages.LoginSales;
 import com.ptdika.siloam.utils.Constants;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -14,7 +17,7 @@ import io.cucumber.java.en.When;
 public class TestLoginAdmin {
 	public static WebDriver driver;
 	private static ExtentTest extentTest;
-	private LoginSales loginPage = new LoginSales();
+	private LoginAdmin loginAdminPage = new LoginAdmin();
 
 	public TestLoginAdmin() {
 		driver = Hooks.driver;
@@ -30,7 +33,7 @@ public class TestLoginAdmin {
 
 	@And("User Admin enter Invalid username and password")
 	public void user_admin_enter_invalid_username_and_password() {
-		loginPage.login("admindikaa", "d1k4@passw0rd");
+		loginAdminPage.login("admindikaa", "d1k4@passw0rd");
 		extentTest.log(LogStatus.PASS, "User Admin enter invalid username and password");
 	}
 
@@ -49,7 +52,7 @@ public class TestLoginAdmin {
 	public void user_admin_enter_valid_username_and_password() {
 		driver.navigate().refresh();
 		delay(1);
-		loginPage.login("admindika", "d1k4@passw0rd");
+		loginAdminPage.login("admindika", "d1k4@passw0rd");
 		extentTest.log(LogStatus.PASS, "User Admin enter valid username and password");
 	}
 
@@ -63,6 +66,24 @@ public class TestLoginAdmin {
 	public void user_admin_enter_valid_credentials() {
 		extentTest.log(LogStatus.PASS, "User Admin valid credentials valid");
 
+	}
+	
+	@And("User admin go to view report")
+	public void User_admin_go_to_view_report() {
+		loginAdminPage.clickMenuViewReport();
+		extentTest.log(LogStatus.PASS, "User admin go to view report");
+	}
+	
+	@And("User click filter button")
+	public void User_click_filter_button() {
+		loginAdminPage.clickBtnFilter();
+		extentTest.log(LogStatus.PASS,"User click filter button");
+	}
+	
+	@And("User find error message")
+	public void User_find_error_message() {
+		loginAdminPage.txtScrap();
+		extentTest.log(LogStatus.PASS,"User find error message");
 	}
 
 	static void delay(int detik) {
