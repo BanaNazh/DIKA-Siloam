@@ -60,8 +60,8 @@ public class ReturnFilter {
 
 	@FindBy(xpath = "//button[@id='btn-filter']")
 	private WebElement btnFilter;
-	
-	@FindBy (xpath = "//button[@id='btn-reset']")
+
+	@FindBy(xpath = "//button[@id='btn-reset']")
 	private WebElement btnReset;
 
 	@FindBy(css = "#table > tbody > tr > td")
@@ -69,7 +69,7 @@ public class ReturnFilter {
 
 	@FindBy(xpath = "//*[@id=\"table\"]/tbody/tr/td[7]/span")
 	private WebElement sudahTTD;
-	
+
 	@FindBy(css = "#table > tbody > tr:nth-child(1) > td:nth-child(7) > center > a")
 	private WebElement eyeIcon;
 
@@ -305,82 +305,82 @@ public class ReturnFilter {
 		return sudahTTD.getText();
 
 	}
-	
+
 //	Scenario: Pending Status Ret007	
 	public void clickOnDatePickerStartDateRet007() {
 		datePickerStart.click();
 	}
-	
+
 	public void selectADayOnStartDateRet007() {
 		dateStartSelect.click();
 	}
-	
+
 	public void clickOnDatePickerEndDateRet007() {
 		datePickerEnd.click();
 	}
-	
+
 	public void selectADayOnEndDateRet007() {
 		dateEndSelect.click();
 	}
-	
+
 	public void clickStatusDropdownRet007() {
 		clickStatusDropdown.click();
 	}
-	
+
 	public void selectStatusPendingRet007() {
 		textboxStatus.sendKeys("Pending" + "\n");
 	}
-	
+
 	public void clickButtonFilterRet007() {
 		btnFilter.click();
 
 	}
-	
+
 	public boolean userReturnPageForStatusPendingRet007() {
 		return eyeIcon.isDisplayed();
 
 	}
-	
+
 //	Scenario: Reset Button Ret008
 	public void clickOnDatePickerStartDateRet008() {
 		datePickerStart.click();
 	}
-	
+
 	public void selectADayOnStartDateRet008() {
 		dateStartSelect.click();
 	}
-	
+
 	public void clickOnDatePickerEndDateRet008() {
 		datePickerEnd.click();
 	}
-	
+
 	public void selectADayOnEndDateRet008() {
 		dateEndSelect.click();
 	}
-	
+
 	public void clickStatusDropdownRet008() {
 		clickStatusDropdown.click();
 	}
-	
+
 	public void selectStatusPendingRet008() {
 		textboxStatus.sendKeys("Pending" + "\n");
 	}
-	
+
 	public void clickButtonResetRet008() {
 		btnReset.click();
 
 	}
-	
+
 	public String validateValueOnStartDateRet008() {
 		return datePickerStart.getAttribute("value");
 	}
-	
-	public String validateValueOnEndDateRet008()	{
+
+	public String validateValueOnEndDateRet008() {
 		return datePickerEnd.getAttribute("value");
 	}
-	
-	public String validateValueOnStatusDropdownRet008()	{
-		return clickStatusDropdown.getAttribute("title");			
+
+	public String validateValueOnStatusDropdownRet008() {
+		return clickStatusDropdown.getAttribute("title");
 	}
 
 	public void dataDisplay() {

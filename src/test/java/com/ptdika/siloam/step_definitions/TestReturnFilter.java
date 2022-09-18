@@ -443,13 +443,13 @@ public class TestReturnFilter {
 
 	@Then("User return Page for status Pending Ret007")
 	public void User_return_Page_for_status_Pending_Ret007() {
-		System.out.println("Button visible: " +modulReturn.userReturnPageForStatusPendingRet007());
+		System.out.println("Button visible: " + modulReturn.userReturnPageForStatusPendingRet007());
 		boolean buttonVisible = modulReturn.userReturnPageForStatusPendingRet007();
-		assertEquals(buttonVisible,true);
+		assertEquals(buttonVisible, true);
 		extentTest.log(LogStatus.PASS, "User return Page for status Pending Ret007");
-	
-	}	
-	
+
+	}
+
 	// Scenario: Reset Button Ret008
 	@And("Click on date picker Start Date Ret008")
 	public void Click_on_date_picker_Start_Date_Ret008() {
@@ -504,9 +504,9 @@ public class TestReturnFilter {
 		String txtStartDateRet008 = modulReturn.validateValueOnStartDateRet008();
 		assertEquals(txtStartDateRet008, null);
 		extentTest.log(LogStatus.PASS, "Validate value on Start Date Ret008");
-	
+
 	}
-	
+
 	@Then("Validate value on End Date Ret008")
 	public void Validate_value_on_End_Date_Ret008() {
 		modulReturn.validateValueOnEndDateRet008();
@@ -516,7 +516,7 @@ public class TestReturnFilter {
 		extentTest.log(LogStatus.PASS, "Validate value on End Date Ret008");
 		delay(2);
 	}
-	
+
 	@Then("Validate value on Status Dropdown Ret008")
 	public void Validate_value_on_Status_Dropdown_Ret008() {
 		modulReturn.validateValueOnStatusDropdownRet008();
@@ -524,18 +524,6 @@ public class TestReturnFilter {
 		String txtRet008 = modulReturn.validateValueOnStatusDropdownRet008();
 		assertEquals(txtRet008, null);
 		extentTest.log(LogStatus.PASS, "Validate value on Status Dropdown Ret008");
-	}	
-	
-	// Scenario: User select Data Display
-	@And("User select data display per page")
-	public void User_select_data_display_per_page() {
-		delay(2);
-		modulReturn.dataDisplay();
-		delay(2);
-		scroll(1200);
-		delay(2);
-		extentTest.log(LogStatus.PASS, "User select data display per page");
-
 	}
 
 	static void delay(int detik) {
