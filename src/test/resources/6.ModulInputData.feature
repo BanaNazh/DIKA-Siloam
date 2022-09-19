@@ -62,31 +62,7 @@ Scenario: User on feature input data Field Faskes Tujuan
 			And User input field Jakarta Pusat
 			Then User click button Simpan
 			And User input field Alasan
-			Then User click button Simpan
-			
-#@tag8
-#Scenario: User not input data Field
-#			And User input field BPJS angka
-#			Then User click button Simpan
-#			And User input field Nama huruf
-#			Then User click button Simpan
-#			And User input field BPJS angkaa
-#			Then User click button Simpan
-#			And User input field KTP angka
-#			Then User click button Simpan
-#			And User input field Alamat huruf
-#			Then User click button Simpan
-#			And User click kota KTP 
-#			And User clik Jakarta Selatan
-#			Then User click button Simpan
-#			And User input field faskes Awal huruf
-#			Then User click button Simpan
-#			And User click faskes Tujuan 
-#			And User clik Jakarta Pusat
-#			Then User click button Simpan
-#			And User input field Alasan huruf
-#			Then User click button Simpan
-			
+			Then User click button Simpan		
 
 #Scenario: User not click Faskes Alasan
 #			And User input field Nama huruf

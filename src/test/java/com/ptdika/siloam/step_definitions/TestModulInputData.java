@@ -26,6 +26,7 @@ public class TestModulInputData {
 		extentTest = Hooks.extentTest;
 	}
 	
+// Dashboard	
 	@When("User on menu Dashboard")
 	public void User_on_menu_dashboard() {
 		assertEquals(modul.getTxtPageModul(), "Home");
@@ -154,8 +155,8 @@ public class TestModulInputData {
 //	Form Pilih Kota
 	@When("User click button kota KTP")
 	public void user_click_button_kota_ktp() {
-	modul.btnKota();
-	extentTest.log(LogStatus.PASS, "User click button kota KTP");
+		modul.btnKota();
+		extentTest.log(LogStatus.PASS, "User click button kota KTP");
 	}
 	
 	@And("User input field angka pilih KTP")
@@ -185,27 +186,27 @@ public class TestModulInputData {
 //	Form Faskes Awal
 	@When("User input field faskes Awal simbol")
 	public void user_input_field_faskes_awal_simbol() {
-	modul.txtFaskesAwal("!@#!@!@#!@#");
-	extentTest.log(LogStatus.PASS, "User input field faskes Awal simbol");
+		modul.txtFaskesAwal("!@#!@!@#!@#");
+		extentTest.log(LogStatus.PASS, "User input field faskes Awal simbol");
 	}
 	
 	@And("User input field faskes Awal angka")
-	public void user_input_field_faskes_awal_angka() {
-	modul.txtFaskesAwal("85645487");
-	extentTest.log(LogStatus.PASS, "User input field faskes Awal angka");
+		public void user_input_field_faskes_awal_angka() {
+		modul.txtFaskesAwal("85645487");
+		extentTest.log(LogStatus.PASS, "User input field faskes Awal angka");
 	}
 	
 	@And("User input field faskes Awal huruf")
-	public void user_input_field_faskes_awal_huruf() {
-	modul.txtFaskesAwalHuruf("Clinic Kemang Sari");
-	extentTest.log(LogStatus.PASS, "User input field faskes Awal huruf");
+		public void user_input_field_faskes_awal_huruf() {
+		modul.txtFaskesAwalHuruf("Clinic Kemang Sari");
+		extentTest.log(LogStatus.PASS, "User input field faskes Awal huruf");
 	}
 	
 //	Form Pilih Faskes Tujuan
 	@When("User click button faskes Tujuan")
 	public void user_click_button_faskes_tujuan() {
-	modul.btnFaskesTujuan();
-	extentTest.log(LogStatus.PASS, "User click button faskes Tujuan");
+		modul.btnFaskesTujuan();
+		extentTest.log(LogStatus.PASS, "User click button faskes Tujuan");
 	}
 	
 	@And("User input field angka faskes Tujuan")
@@ -226,17 +227,10 @@ public class TestModulInputData {
 		extentTest.log(LogStatus.PASS, "User input field Jakarta Pusat");
 	}
 	
-	
+// Form Alasan	
 	@And("User input field Alasan")
 	public void user_input_field_alasan() {
 		modul.txtAlasan("Pindah Alamat Rumah");
 		extentTest.log(LogStatus.PASS, "User input field Alasan");
-	}
-	
-//	@When("User click button Foto faskes")
-//	public void user_click_button_foto_faskes() {
-//		modul.btnFaskes();
-//		extentTest.log(LogStatus.PASS, "User click button Foto faskes");
-//	}
-	
+	}	
 }
