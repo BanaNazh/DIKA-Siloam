@@ -9,7 +9,10 @@ public enum TestScenarios {
 	T4("User on feature input data Field Alamat"),
 	T5("User on feature input data Field Search Kota"),
 	T6("User on feature input data Field Faskes Awal"),
-	T7("User on feature input data Field Faskes Tujuan");
+	T7("User on feature input data Field Faskes Tujuan"),
+	T8("Upload foto faskes Awal"),
+	T9("Upload foto faskes Tujuan"),
+	T10("Upload foto faskes Awal");
 	
 	
 	private String testName;
