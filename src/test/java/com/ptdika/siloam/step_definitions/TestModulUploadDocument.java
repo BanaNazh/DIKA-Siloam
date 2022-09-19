@@ -81,10 +81,9 @@ public class TestModulUploadDocument {
 		extentTest.log(LogStatus.PASS, "User click button Selanjutnya");
 	}
 	
-	@Then("User click button OK")
+	@Then("User click button OK") // gapake xpath
 	public void user_click_button_OK() {
 		Hooks.delay(3);
-//		modul.pilihLanjut();
 		driver.switchTo().alert().accept();
 		Hooks.delay(2);
 		extentTest.log(LogStatus.PASS, "User click button OK");
