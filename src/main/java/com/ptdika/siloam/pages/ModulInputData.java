@@ -11,189 +11,188 @@ import com.ptdika.siloam.drivers.DriverSingleton;
 
 public class ModulInputData {
 
-private WebDriver driver;
-	
+	private WebDriver driver;
+
 	public ModulInputData() {
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
 	
+// Dashboard
 	@FindBy(xpath = "//h1[@class='page-header']")
 	private WebElement txtHeader;
-	
+
 	@FindBy(xpath = "//span[normalize-space()='Input']")
 	private WebElement btnInput;
-	
+
+//	Form Nama
 	@FindBy(xpath = "//input[@id='name']")
 	private WebElement txtNama;
-	
+
 	@FindBy(xpath = "//input[@id='name']")
 	private WebElement txtNamaKeep;
-		
+
+// Form BPJS	
 	@FindBy(xpath = "//input[@id='no_bpjs']")
 	private WebElement txtBpjs;
-	
+
 	@FindBy(xpath = "//input[@id='no_bpjs']")
 	private WebElement txtBpjsKurang;
-	
+
 	@FindBy(xpath = "//input[@id='no_bpjs']")
 	private WebElement txtBpjsTambah;
-	
+
+// Form KTP	
 	@FindBy(xpath = "//input[@id='no_ktp']")
 	private WebElement txtKtp;
-	
+
 	@FindBy(xpath = "//input[@id='no_ktp']")
 	private WebElement txtKtpKurang;
-	
+
 	@FindBy(xpath = "//input[@id='no_ktp']")
 	private WebElement txtKtpTambah;
-	
+
+// Form Alamat	
 	@FindBy(xpath = "//textarea[@id='address']")
 	private WebElement txtAlamat;
-	
+
 	@FindBy(xpath = "//textarea[@id='address']")
 	private WebElement txtAlamatHuruf;
-	
+
+// Form Pilih Kota
 	@FindBy(xpath = "//span[@id='select2-ktp_city-container']")
 	private WebElement btnKota;
-	
+
 	@FindBy(xpath = "//*[text()=\"KOTA JAKARTA SELATAN\"]")
 	private WebElement pilihKota;
-	
+
 	@FindBy(xpath = "//input[@role='textbox']")
 	private WebElement txtPilihKota;
 
 	@FindBy(xpath = "//input[@role='textbox']")
 	private WebElement txtPilihKotaHuruf;
-	
+
+//	Form Faskes Awal	
 	@FindBy(xpath = "//input[@id='origin_faskes']")
 	private WebElement txtFaskesAwal;
-	
+
 	@FindBy(xpath = "//input[@id='origin_faskes']")
 	private WebElement txtFaskesAwalHuruf;
-	
+
+//	Form Pilih Faskes Tujuan	
 	@FindBy(xpath = "//span[@id='select2-destination_faskes-container']")
 	private WebElement btnFaskesTujuan;
-	
+
 	@FindBy(xpath = "//input[@role='textbox']")
 	private WebElement txtFaskesTujuan;
-	
+
 	@FindBy(xpath = "//input[@role='textbox']")
 	private WebElement txtFaskesTujuanHuruf;
-	
+
+// Form Alasan	
 	@FindBy(xpath = "//textarea[@id='reason']")
 	private WebElement txtAlasan;
-	
+
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement btnSimpan;
-	
-	
-	
-//	@FindBy(xpath = "//span[normalize-space()='Foto Faskes Awal']")
-//	private WebElement btnFaskes;
-	
-	
-	// Actual
+
+// Actual
 	public String getTxtPageModul() { // validasi teks di tampilan
 		return txtHeader.getText();
 	}
-	
+
 	public void btnInput() {
 		btnInput.click();
 	}
-	
+
 	public void txtNama(String nama) {
 		this.txtNama.sendKeys(nama);
 		txtNama.clear();
 	}
-	
+
 	public void txtNamaKeep(String nama) {
 		this.txtNamaKeep.sendKeys(nama);
 	}
-	
+
 	public void txtBPJS(String nama) {
 		this.txtBpjs.sendKeys(nama);
 		txtBpjs.clear();
 	}
-	
+
 	public void txtBPJSkurang(String nama) {
 		this.txtBpjsKurang.sendKeys(nama);
 	}
-	
+
 	public void txtBPJStambah(String nama) {
 		this.txtBpjsTambah.sendKeys(nama);
 	}
-	
+
 	public void btnSimpan() {
 		btnSimpan.click();
 	}
-	
+
 	public void txtKTP(String nama) {
 		this.txtKtp.sendKeys(nama);
 		txtKtp.clear();
 	}
-	
+
 	public void txtKTPkurang(String nama) {
 		this.txtKtpKurang.sendKeys(nama);
 	}
-	
+
 	public void txtKTPtambah(String nama) {
 		this.txtKtpTambah.sendKeys(nama);
 	}
-	
+
 	public void txtAlamat(String nama) {
 		this.txtAlamat.sendKeys(nama);
 		txtAlamat.clear();
 	}
-	
+
 	public void txtAlamatHuruf(String nama) {
 		this.txtAlamatHuruf.sendKeys(nama);
 	}
-	
+
 	public void btnKota() {
 		btnKota.click();
 	}
-	
+
 	public void pilihKota() {
-		pilihKota.click();;
+		pilihKota.click();
 	}
-	
+
 	public void txtPilihKota(String nama) {
 		this.txtPilihKota.sendKeys(nama);
 		txtPilihKota.clear();
 	}
-	
+
 	public void txtPilihKotaHuruf(String nama) {
 		this.txtPilihKotaHuruf.sendKeys(nama);
 	}
-		
+
 	public void txtFaskesAwal(String nama) {
 		this.txtFaskesAwal.sendKeys(nama);
 		txtFaskesAwal.clear();
 	}
-	
+
 	public void txtFaskesAwalHuruf(String nama) {
 		this.txtFaskesAwalHuruf.sendKeys(nama);
 	}
-		
+
 	public void btnFaskesTujuan() {
 		btnFaskesTujuan.click();
 	}
-	
+
 	public void txtFaskesTujuan(String nama) {
 		this.txtFaskesTujuan.sendKeys(nama);
 		txtFaskesTujuan.clear();
 	}
-	
+
 	public void txtFaskesTujuanHuruf(String nama) {
 		this.txtFaskesTujuanHuruf.sendKeys(nama);
-	}	
-	
+	}
+
 	public void txtAlasan(String nama) {
 		this.txtAlasan.sendKeys(nama);
 	}
-//	public void btnFaskes() {
-//		btnFaskes.click();
-//	}
-	
 }
